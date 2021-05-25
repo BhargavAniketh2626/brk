@@ -1,0 +1,40 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact Us{% endblock title %}
+{% block main-content %}
+<section class="bg-img1 txt-center" name="bob1" style="background: black">
+    <h2 class="ltext-105 cl0 txt-center" style="color: black; font: italic;">
+        <h2 class="text-center text-white">Contact Us</h2>
+    </h2>
+</section>	
+<div class="contact-wrap">
+    <div class="contact-in">
+        <h1>Contact Info</h1>
+        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+        <p>(+91)-9618029818</p>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>anikethklcse19@gmail.com</p>
+        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+        <p>Lotus landmark, vijayawada-520003, India</p>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="contact-in">
+        <h1>Send a Message</h1>
+        <form method="POST" action="mailto:anikethklcse19@gmail.com" encypt="text/pain">
+            <input type="text" placeholder="Full Name" class="contact-in-input">
+            <input type="text" placeholder="Email" class="contact-in-input">
+            <input type="text" placeholder="Subject" class="contact-in-input">
+            <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+            <input type="submit" value="SUBMIT" class="contact-in-btn">
+        </form>
+    </div>
+    <div class="contact-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.9865611712908!2d80.62759141481393!3d16.52677608859977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff6e2c621e5%3A0x4d73493dc5540b45!2sAkash%20Apartments%20Block%20-%209%2C%20Lotus%20Landmark%20Internal%20Road%2C%20Lotus%20Landmark%2C%20Ayodhya%20Nagar%2C%20Vijayawada%2C%20Andhra%20Pradesh%20520003!5e0!3m2!1sen!2sin!4v1621274325419!5m2!1sen!2sin" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+{% endblock main-content %}

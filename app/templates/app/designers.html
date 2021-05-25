@@ -1,0 +1,573 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Designers Blog{% endblock title %}
+{% block main-content %}
+
+<div class = "products">
+    <div class = "container4">
+        <h1 class = "lg-title" style="color: black; font: bold;">BRK Fashion Designers Blog</h1>
+        <p class = "text-center text-black">BRK Fashions is proud to exhibit famous desginers in our Blog , who has anormous expertise in this field and have provided creative designs in ethnic wears , sports wears , office wears and other categorial wears.</p>
+
+        <div class = "product-items">
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/v4.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">William</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>17yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All Men's Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Williams</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                        <div class="rating-wrap">
+                            <h2>Star Rating</h2>
+                            <div class="center">
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                    <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                    <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                    <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                    <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                    <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                                </fieldset>
+                            </div>
+                            <h3 id="rating-value"></h3>
+                        </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/man1.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">James</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>13yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Casual Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>James</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/v4.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Benjimin</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>19yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All Men's Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Benjimin</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/man1.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Lucas Prist</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>7yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Sport's Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Lucas</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/v4.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Shankar Govind</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>23yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Office Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Shankar</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/man1.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Robot Kilvin</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>11yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All Men's Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Robot</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/v4.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Jhonny Blaze</h2>
+                    </div>
+                    <div class = "product-info-top">
+                        <label>Rating:</label>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>16yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Ethnic Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Jhonny</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+            <!-- single product -->
+            <div class = "product">
+                <div class = "product-content">
+                    <div class = "product-img">
+                        <img src = "{% static 'app/images/man1.png' %}" alt = "product image">
+                    </div>
+                </div>
+
+                <div class = "product-info">
+                    <div class = "product-info-top">
+                        <h2 class = "sm-title">Vijay Thalvar</h2>
+                    </div>
+                    <div class = "product-info-top">
+                    <label>Rating:</label>
+                    <div class = "rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "far fa-star"></i></span>
+                    </div>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>14yrs</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All Men's Wears</span></label>
+                    </div>
+                    <div class ="product-info-top">
+                        <label>Room Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Vijay</span></label>
+                    </div>
+                    <div class="wrap">
+                        <div class="item">
+                            <input type="submit" Value="Rate" name="submit" id="submit">
+                        </div>
+                        <div class="item">
+                            <a href="{% url 'home1' %}">
+                                <input type="submit" Value="Chat" name="submit" id="submit" action="web.html">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rating-wrap">
+                        <h2>Star Rating</h2>
+                        <div class="center">
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                                <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                                <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                                <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                                <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                                <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                            </fieldset>
+                        </div>
+            
+                        <h3 id="rating-value"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end of single product -->
+        </div>
+    </div>
+</div>
+
+<div class = "product-collection">
+    <div class = "container4">
+        <div class = "product-collection-wrapper">
+            <!-- product col left -->
+            <div class = "product-col-left flex">
+                <div class = "product-col-content">
+                    <h2 class = "md-title">BRK-FASHIONS OFFICEWEARS  </h2>
+                    <p class = "text-light">“The boor covers himself, the rich man or the fool adorns himself, and the elegant man gets dressed.”‘Fashion is a form of ugliness so intolerable that we have to alter it every six months'</p>
+                    <a href="{% url 'officewears' %}">
+                    <button type = "button" class = "btn-dark">Shop now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- product col right -->
+            <div class = "product-col-right">
+                <div class = "product-col-r-top flex">
+                    <div class = "product-col-content">
+                        <h2 class = "md-title">BRK-FASHIONS CASUALWEARS </h2>
+                        <p class = "text-light">“The boor covers himself, the rich man or the fool adorns himself, and the elegant man gets dressed.”‘Fashion is a form of ugliness so intolerable that we have to alter it every six months'</p>
+                        <a href="{% url 'casualwears' %}">
+                        <button type = "button" class = "btn-dark">Shop now</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "product-col-r-bottom">
+                    <!-- left -->
+                    <div class = "flex">
+                        <div class = "product-col-content">
+                            <h2 class = "md-title">BRK-FASHIONS ETHNICWEARS </h2>
+                            <p class = "text-light">“The boor covers himself, the rich man or the fool adorns himself, and the elegant man gets dressed.”‘Fashion is a form of ugliness so intolerable that we have to alter it every six months'</p>
+                            <a href="{% url 'ethnicwears' %}">
+                            <button type = "button" class = "btn-dark">Shop now</button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class = "flex">
+                        <div class = "product-col-content">
+                            <h2 class = "md-title">BRK-FASHIONS SPORTSWEARS </h2>
+                            <p class = "text-light">“The boor covers himself, the rich man or the fool adorns himself, and the elegant man gets dressed.”‘Fashion is a form of ugliness so intolerable that we have to alter it every six months'</p>
+                            <a href="{% url 'sportswears' %}">
+                            <button type = "button" class = "btn-dark">Shop now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock main-content %}
